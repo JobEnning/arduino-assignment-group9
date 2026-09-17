@@ -1,6 +1,7 @@
 # arduino-assignment-group9
 The description of the Arduino project of group 9 for the Open Science course.
 
-heb je mij al gelezen
+**Components**
 
-Hoi, dit is Loeks toevoeging aan de readme :)
+![CO2 sensor front](pictures/CO2.png)
+![CO2 sensor back](pictures/CO2_2.png)
