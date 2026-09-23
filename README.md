@@ -1,8 +1,8 @@
 # arduino-assignment-group9
 The description of the Arduino project of group 9 for the Open Science course.
 
-##Preliminaries##
-**Installing the Arduino IDE**
+## Preliminaries
+### Installing the Arduino IDE
 Before getting started on the Arduino you'll first need a way to tell it what to do. To do so you will need to install the Arduino IDE. 
 Step 1. To download this IDE you can google "Arduino IDE" and then navigate to the arduino docs website, alternatively you can directly copy the following link into your browser: https://docs.arduino.cc/software/ide/. 
 Step 2. Press the blue download button, on the next page choose your operating system in the dropdown menu and press download.
@@ -14,5 +14,5 @@ Step 6. After reopening choose the go to "select other board and port..." and ch
 
 Congratulations, you are now ready to give your Arduino some instructions.
 
-**Testing your Arduino**
+### Testing your Arduino
 Before starting to build the sensor you need to make sure that your Arduino copy is functional. To do so select "file" in the top left-hand corner. Choose "Examples", "01.Basics", and then "Blink". This will open a new window with the Blink code. To upload and run it press the "Upload" button with a blue arrow in the top left. The built-in orange LED on the Arduino should now start blinking.
