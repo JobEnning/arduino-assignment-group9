@@ -32,7 +32,7 @@ Step 3. Select "file" in the top left-hand corner. Choose "Examples", "01.Basics
 
 Step 4. In the top "Select Board" drop-down menu choose the Arduino UNO R3.
 
-Step 5. To upload and run the "Blink" code, press the "Upload" button with a blue arrow near the top left-hand corner. The built-in orange LED on the Arduino should now start blinking.
+Step 5. To upload and run the "Blink" code, press the "Upload" button with a blue arrow near the top left-hand corner. The built-in orange LED on the Arduino should now start blinking once every second.
 
 (Step 6.) If your LED does not start blinking make sure you have selected the right model in the upper drop-down menu. In case this is correct, but the LED still doesn't start blinking, try using a different Arduino device. If the second device does work it means that the first one you used is fried.
 
@@ -40,16 +40,29 @@ Step 5. To upload and run the "Blink" code, press the "Upload" button with a blu
 Now that the intial setup has been completed you can begin building the sensor.
 
 ### Components
-Below is a list of all components.
-There are two sensors involved in this setup. The CO2 sensor is shown below (front and back):
+Below is a list of all components, with images of the front and back.
 
+The Arduino UNO R3:
+<img src="pictures/arduino.png" width = "300"><img src="pictures/arduino2.png" width = "300">
+
+The breadboard:
+<img src="pictures/breadbord.png" width = "300">
+
+Cables in various lengths and colours:
+<img src="pictures/cables.png" width = "300">
+
+Cable to connect the Arduino to either a power source or a computer:
+<img src="pictures/powercable.png" width = "300">
+
+There are two sensors involved in this setup. 
+The first is the CO2 sensor:
 <img src="pictures/CO2.png" width="300"><img src="pictures/CO2_2.png" width="300">
 
-The other sensor is the Pressure/Temperature/Relative Humidity sensor, shown below:
-
+The other sensor is the Pressure/Temperature/Relative Humidity sensor:
 <img src="pictures/TPRH.png" width="300"><img src="pictures/TPRH2.png" width="300">
 
-TODO add other components (Lester?)
+Finally the SD to where the measured data is stored:
+<img src="pictures/SD.png" width = "300"><img src="pictures/SD2.png" width = "300">
 
 ### Wiring diagram
 Connect all components using wires and the breadboard according to the following image:
