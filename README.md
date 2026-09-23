@@ -43,25 +43,38 @@ Now that the intial setup has been completed you can begin building the sensor.
 Below is a list of all components, with images of the front and back.
 
 The Arduino UNO R3:
+
 <img src="pictures/arduino.png" width = "300"><img src="pictures/arduino2.png" width = "300">
 
+
 The breadboard:
+
 <img src="pictures/breadbord.png" width = "300">
 
+
 Cables in various lengths and colours:
+
 <img src="pictures/cables.png" width = "300">
 
+
 Cable to connect the Arduino to either a power source or a computer:
+
 <img src="pictures/powercable.png" width = "300">
+
 
 There are two sensors involved in this setup. 
 The first is the CO2 sensor:
+
 <img src="pictures/CO2.png" width="300"><img src="pictures/CO2_2.png" width="300">
 
+
 The other sensor is the Pressure/Temperature/Relative Humidity sensor:
+
 <img src="pictures/TPRH.png" width="300"><img src="pictures/TPRH2.png" width="300">
 
+
 Finally the SD to where the measured data is stored:
+
 <img src="pictures/SD.png" width = "300"><img src="pictures/SD2.png" width = "300">
 
 ### Wiring diagram
