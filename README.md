@@ -43,13 +43,11 @@ Now that the intial setup has been completed you can begin building the sensor.
 Below is a list of all components.
 There are two sensors involved in this setup. The CO2 sensor is shown below (front and back):
 
-<img src="pictures/CO2.png" width="300">
-<img src="pictures/CO2_2.png" width="300">
+<img src="pictures/CO2.png" width="300"><img src="pictures/CO2_2.png" width="300">
 
 The other sensor is the Pressure/Temperature/Relative Humidity sensor, shown below:
 
-<img src="pictures/TPRH.png" width="300">
-<img src="pictures/TPRH2.png" width="300">
+<img src="pictures/TPRH.png" width="300"><img src="pictures/TPRH2.png" width="300">
 
 TODO add other components (Lester?)
 
