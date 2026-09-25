@@ -127,4 +127,4 @@ The file `code/csv-extract/csv-extract.ino` can be used to show all the data sto
 The file `code/sdcard-erase/sdcard-erase.ino` can be used to erase the data on the SD card. Open the file and upload to the Arduino as before. 
 
 ## Analysis
-The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. 
+The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo)
