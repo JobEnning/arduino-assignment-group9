@@ -87,7 +87,7 @@ To wire the Arduino we will be using a breadboard, which is a tool that's often 
 Or consult the following table (CO2 sensor pins going from left to right): 
 
 | Pin 1             | Pin 2          |
---------------------------------------
+|-------------------|----------------|
 | CO2 Sensor pin 2  | Arduino pin 6  |
 | CO2 Sensor pin 3  | Arduino pin 7  |
 | CO2 Sensor pin 4  | Arduino 5V     |
