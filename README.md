@@ -47,6 +47,7 @@ Below is a list of all components, with images of the front and back.
 The Arduino UNO R3:
 
 <img src="pictures/arduino.png" width = "300"><img src="pictures/arduino2.png" width = "300">
+
 Datasheet: datasheet/A000066-datasheet.pdf
 Pinout: datasheet/A000066-full-pinout.pdf
 
@@ -68,11 +69,13 @@ There are two sensors involved in this setup.
 The first is the CO2 sensor:
 
 <img src="pictures/CO2.png" width="300"><img src="pictures/CO2_2.png" width="300">
+
 Datasheet: datasheet/mh-z19c-pins-type-co2-manual-ver1_0.pdf
 
 The other sensor is the Pressure/Temperature/Relative Humidity sensor:
 
 <img src="pictures/TPRH.png" width="300"><img src="pictures/TPRH2.png" width="300">
+
 Datasheet: datasheet/BST-BME280-DS002-1509607.pdf
 
 Finally, the SD card reader with the SD card where the measured data is written to:
