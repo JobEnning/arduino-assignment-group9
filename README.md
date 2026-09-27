@@ -130,7 +130,7 @@ The file `code/csv-extract/csv-extract.ino` can be used to show all the data sto
 The file `code/sdcard-erase/sdcard-erase.ino` can be used to erase the data on the SD card. Open the file and upload to the Arduino as before. 
 
 ## Analysis
-The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo)
+The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo). Besides that you'll need the Matplotlib and Numpy packages, for instructions see: [Matplotlib install page](https://matplotlib.org/stable/install/index.html) and [Numpy install page](https://numpy.org/install/).
 
 ## Measurement protocol
 We would like to take a measurement of pressure, temperature, relative humidity, and CO2 concentration in the university library. To set up the measurement:
@@ -141,5 +141,20 @@ We would like to take a measurement of pressure, temperature, relative humidity,
 5. Upload a measurement file, we started with PTRHsensor.ino, to measure pressure, temperature and relative humidity.
 6. Now unplug the Arduino from the laptop/PC, and plug it into the external battery instead. This allows you to take measurements without having to leave the Arduino connected to your laptop/PC.
 7. Set up the sensor in the desired location, in our case the third floor of the Utrecht University library on science park. Denote the starting time of your measurement.
-8. When the measurement is done, in our case 1 hour and 15 minutes, unplug the Arduino from the external battery, and plug it in to your laptop/PC. Use the `csv-extract.ino` file to read the data, copying it into a .dat file labeled with the time and date of your measurement.
+8. When the measurement is done, in our case 1 hour and 15 minutes, unplug the Arduino from the external battery, and plug it in to your laptop/PC. Use the `csv-extract.ino` file to read the data, copying it into a .dat file labeled with the time, date and place of your measurement.
 9. Clear the SD card, and upload the CO2 measurement file. Now place the Arduino back in its position, denoting once more the starting time.
+10. When the measurement is done, again unplug the Arduino, and save the data onto a file once more labeled with the time, date and place of the measurement. (For our measurement files, see analyse/ptrh-27-9-1200-unilibrary.dat and analyse/co2-27-9-1320-unilibrary.dat respectively.
+
+## Results
+The data from the files analyse/ptrh-27-9-1200-unilibrary.dat and analyse/co2-27-9-1320-unilibrary.dat are shown in the following graphs:
+### Temperature measurement
+<img src="pictures/temperature-27-9-1200-unilibrary.png" width = "300">
+
+### Pressure measurement
+<img src="pictures/pressure-27-9-1200-unilibrary.png" width = "300">
+
+### Relative humidity measurement
+<img src="pictures/relativehumidity-27-9-1200-unilibrary.png" width = "300">
+
+### CO2 measurement
+<img src="pictures/co2-27-9-1320-unilibrary.png" width = "300">
