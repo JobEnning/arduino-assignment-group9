@@ -131,3 +131,13 @@ The file `code/sdcard-erase/sdcard-erase.ino` can be used to erase the data on t
 
 ## Analysis
 The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo)
+
+## Measurement protocol
+We would like to take a measurement of pressure, temperature, relative humidity, and CO2 concentration in the university library. To set up the measurement:
+1. Plug in the Arduino to laptop/PC
+2. Ensure the IDE is in contact with the board, if not, reread `Running the code`, and try again.
+3. Clear the SD card using the provided code.
+4. Use the csv-extract.ino file, ensuring it doesn't return anything in the Serial Monitor. This means the SD card is successfully cleared.
+5. Upload a measurement file, we started with PTRHsensor.ino, to measure pressure, temperature and relative humidity.
+6. Now unplug the Arduino from the laptop/PC, and plug it into the external battery instead. This allows you to take measurements without having to leave the Arduino connected to your laptop/PC.
+7. Set up the sensor in the desired location, in our case the third floor of the Utrecht University library on science park.
