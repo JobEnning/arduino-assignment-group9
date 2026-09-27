@@ -140,4 +140,6 @@ We would like to take a measurement of pressure, temperature, relative humidity,
 4. Use the csv-extract.ino file, ensuring it doesn't return anything in the Serial Monitor. This means the SD card is successfully cleared.
 5. Upload a measurement file, we started with PTRHsensor.ino, to measure pressure, temperature and relative humidity.
 6. Now unplug the Arduino from the laptop/PC, and plug it into the external battery instead. This allows you to take measurements without having to leave the Arduino connected to your laptop/PC.
-7. Set up the sensor in the desired location, in our case the third floor of the Utrecht University library on science park.
+7. Set up the sensor in the desired location, in our case the third floor of the Utrecht University library on science park. Denote the starting time of your measurement.
+8. When the measurement is done, in our case 1 hour and 15 minutes, unplug the Arduino from the external battery, and plug it in to your laptop/PC. Use the `csv-extract.ino` file to read the data, copying it into a .dat file labeled with the time and date of your measurement.
+9. Clear the SD card, and upload the CO2 measurement file. Now place the Arduino back in its position, denoting once more the starting time.
