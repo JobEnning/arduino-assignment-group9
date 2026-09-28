@@ -124,29 +124,30 @@ Open the file `code/PTRHsensor/PTRHsensor.ino` in the Arduino IDE, by choosing `
 For the CO2 sensor, the same steps should be followed as for the temperature/pressure/relative humidity sensor, but with the file `code/CO2sensor/CO2sensor.ino`. The sensor measures the CO2 concentration of the air in parts per million (ppm) every 10 seconds. 
 
 ## Extract the data
-The file `code/csv-extract/csv-extract.ino` can be used to show all the data stored in the `data.csv` file on the Arduino. Open the file and upload it to the Arduino as before. By running the code, the data is printed to the Serial Monitor window. Create a file with suffix `.dat` in some text editor (for example VSCode), and save it to the folder `code/analyse`  (Example data in `code/analyse/testdata_bme.dat` for the temperature/pressure/relative humidity data, `code/analyse/testdata_CO2.dat` for the CO2 concentration data) for analysis; see below. The file possibly contains data from both sensors; make sure to put the data corresponding to the correct sensor in the correct file. 
+The file `code/csv-extract/csv-extract.ino` can be used to show all the data stored in the `data.csv` file on the Arduino. Open the file and upload it to the Arduino as before. By running the code, the data is printed to the Serial Monitor window. Create a file with suffix `.dat` in some text editor (for example VSCode), and save it to the folder `code/analyse` for analysis; see below. Example data can be found in `code/analyse/testdata_bme.dat` for the temperature/pressure/relative humidity data, `code/analyse/testdata_CO2.dat` for the CO2 concentration data. The file on the Arduino possibly contains data from both sensors; make sure to put the data corresponding to the correct sensor in the correct file. 
 
 ## Clear the SD card
 The file `code/sdcard-erase/sdcard-erase.ino` can be used to erase the data on the SD card. Open the file and upload to the Arduino as before. 
 
 ## Analysis
-The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo). Besides that you'll need the Matplotlib and Numpy packages, for instructions see: [Matplotlib install page](https://matplotlib.org/stable/install/index.html) and [Numpy install page](https://numpy.org/install/).
+The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio Code and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio Code and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo). Besides that you'll need the Matplotlib and NumPy packages, for instructions see: [Matplotlib install page](https://matplotlib.org/stable/install/index.html) and [NumPy install page](https://numpy.org/install/).
+The code assumes the data files are in the `analyse` folder under the name `testdata_bme.dat` for the temperature, pressure and relative humidity data and `testdata_CO2.dat` for the CO2 concentration data. If you saved your data in a different file, change the code accordingly. 
 
 ## Measurement protocol
 We would like to take a measurement of pressure, temperature, relative humidity, and CO2 concentration in the university library. To set up the measurement:
-1. Plug in the Arduino to laptop/PC
+1. Plug in the Arduino to laptop/PC.
 2. Ensure the IDE is in contact with the board, if not, reread `Running the code`, and try again.
 3. Clear the SD card using the provided code.
-4. Use the csv-extract.ino file, ensuring it doesn't return anything in the Serial Monitor. This means the SD card is successfully cleared.
-5. Upload a measurement file, we started with PTRHsensor.ino, to measure pressure, temperature and relative humidity.
+4. Use the `csv-extract.ino` file, ensuring it doesn't return anything in the Serial Monitor. This means the SD card is successfully cleared.
+5. Upload a measurement file, we started with `PTRHsensor.ino`, to measure pressure, temperature and relative humidity.
 6. Now unplug the Arduino from the laptop/PC, and plug it into the external battery instead. This allows you to take measurements without having to leave the Arduino connected to your laptop/PC.
-7. Set up the sensor in the desired location, in our case the third floor of the Utrecht University library on science park. Denote the starting time of your measurement.
-8. When the measurement is done, in our case 1 hour and 15 minutes, unplug the Arduino from the external battery, and plug it in to your laptop/PC. Use the `csv-extract.ino` file to read the data, copying it into a .dat file labeled with the time, date and place of your measurement.
+7. Set up the sensor in the desired location, in our case the third floor of the Utrecht University library on Science Park. Denote the starting time of your measurement.
+8. When the measurement is done, in our case 1 hour and 15 minutes, unplug the Arduino from the external battery, and plug it in to your laptop/PC. Use the `csv-extract.ino` file to read the data, copying it into a `.dat` file labeled with the time, date and place of your measurement.
 9. Clear the SD card, and upload the CO2 measurement file. Now place the Arduino back in its position, denoting once more the starting time.
-10. When the measurement is done, again unplug the Arduino, and save the data onto a file once more labeled with the time, date and place of the measurement. (For our measurement files, see analyse/ptrh-27-9-1200-unilibrary.dat and analyse/co2-27-9-1320-unilibrary.dat respectively.
+10. When the measurement is done, again unplug the Arduino, and save the data onto a file once more labeled with the time, date and place of the measurement. For our measurement files, see `analyse/ptrh-27-9-1200-unilibrary.dat` and `analyse/co2-27-9-1320-unilibrary.dat` respectively.
 
 ## Results
-The data from the files analyse/ptrh-27-9-1200-unilibrary.dat and analyse/co2-27-9-1320-unilibrary.dat are shown in the following graphs:
+The data from the files `analyse/ptrh-27-9-1200-unilibrary.dat` and `analyse/co2-27-9-1320-unilibrary.dat` are shown in the following graphs:
 ### Temperature measurement
 <img src="pictures/temperature-27-9-1200-unilibrary.png" width = "300">
 

@@ -2,7 +2,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-time, temp, pres, humi = np.genfromtxt("testdata_bme.dat", delimiter=',').T
+filename = 'testdata_bme.dat' # Change if needed
+time, temp, pres, humi = np.genfromtxt(filename, delimiter=',').T
 
 plt.figure()
 plt.plot(time, temp, '.-')
@@ -29,11 +30,12 @@ plt.show()
 import numpy as np
 import matplotlib.pyplot as plt
 
-time, co2 = np.genfromtxt("testdata_CO2.dat", delimiter=',').T
+filename = "testdata_CO2.dat" # Change if needed
+time, co2 = np.genfromtxt(filename, delimiter=',').T
 
 plt.figure()
 plt.plot(time, co2, '.-')
 plt.xlim(0, time[-1]+time[1])
 plt.xlabel("Time (s)")
-plt.ylabel(r"CO$_2$-concentration (ppm)")
+plt.ylabel(r"CO$_2$ concentration (ppm)")
 plt.show()
