@@ -131,7 +131,7 @@ The file `code/sdcard-erase/sdcard-erase.ino` can be used to erase the data on t
 
 ## Analysis
 The code `analyse/plot.py` generates plots showing the data. Run this Python code using VSCode, Spyder or any other software capable of running Python code. For an installation video see, for Windows: [Visual Studio Code and Python setup Windows](https://www.youtube.com/watch?v=9o4gDQvVkLU), for MacBook: [Visual Studio Code and Python setup MacBook](https://www.youtube.com/watch?v=NirAuEAblvo). Besides that you'll need the Matplotlib and NumPy packages, for instructions see: [Matplotlib install page](https://matplotlib.org/stable/install/index.html) and [NumPy install page](https://numpy.org/install/).
-The code assumes the data files are in the `analyse` folder under the name `testdata_bme.dat` for the temperature, pressure and relative humidity data and `testdata_CO2.dat` for the CO2 concentration data. If you saved your data in a different file, change the code accordingly. 
+The code assumes the data files are in the `analyse` folder under the name `testdata_bme.dat` for the temperature, pressure and relative humidity data and `testdata_CO2.dat` for the CO2 concentration data. If you saved your data in a different file, change the code accordingly. The two cells can be run independently. 
 
 ## Measurement protocol
 We would like to take a measurement of pressure, temperature, relative humidity, and CO2 concentration in the university library. To set up the measurement:
@@ -159,3 +159,15 @@ The data from the files `analyse/ptrh-27-9-1200-unilibrary.dat` and `analyse/co2
 
 ### CO2 measurement
 <img src="pictures/co2-27-9-1320-unilibrary.png" width = "300">
+
+## Process Phase 1
+1. Identified all components. 
+2. Looked up the relevant data sheets. 
+3. Installed the Arduino IDE. 
+4. Downloaded the codes from Brightspace and formatted them properly. 
+5. Connected all components using the breadboard. 
+6. Connected the Arduino to a laptop and ran the codes. 
+7. Downloaded the data to the laptop. 
+8. Wrote Python code that analyses the data and ran it. 
+9. Wrote the first version of the GitHub page. 
+10. Let other group members try to replicate the process and improve the GitHub. 
