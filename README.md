@@ -160,7 +160,8 @@ The data from the files `analyse/ptrh-27-9-1200-unilibrary.dat` and `analyse/co2
 ### CO2 measurement
 <img src="pictures/co2-27-9-1320-unilibrary.png" width = "300">
 
-## Process Phase 1
+## Process descriptions
+### Phase 1
 1. Identified all components. 
 2. Looked up the relevant data sheets. 
 3. Installed the Arduino IDE. 
@@ -170,4 +171,7 @@ The data from the files `analyse/ptrh-27-9-1200-unilibrary.dat` and `analyse/co2
 7. Downloaded the data to the laptop. 
 8. Wrote Python code that analyses the data and ran it. 
 9. Wrote the first version of the GitHub page. 
-10. Let other group members try to replicate the process and improve the GitHub. 
+10. Let other group members try to replicate the process and improve the GitHub.
+
+### Phase 2
+After the GitHub was set up, we swapped the Arduino over to different group members, to test the documentation written thus far. Here some important corrections came up, like the table complementing the wiring diagram, some clarifications on instructions, and some further installation details. This group member did the measurements, and wrote the protocol. The data was included with relative ease, as the initial version of the documentation was already good.
